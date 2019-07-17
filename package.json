@@ -1,0 +1,44 @@
+{
+  "name": "react-multi-step-form-material-design",
+  "version": "1.0.0",
+  "description": "Material Design Multiform with react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpoack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cvjude/React-multi-step-form-Material-design.git"
+  },
+  "keywords": [
+    "react",
+    "material-design"
+  ],
+  "author": "Jude Chinoso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cvjude/React-multi-step-form-Material-design/issues"
+  },
+  "homepage": "https://github.com/cvjude/React-multi-step-form-Material-design#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.2.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.1",
+    "webpack-cli": "^3.3.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/plugin-transform-runtime": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "webpack": "^4.35.3",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
