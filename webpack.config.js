@@ -1,5 +1,6 @@
 const htmlWebpackPlugin = require("html-webpack-plugin");
 const miniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require("path");
 
 const htmlPlugin = new htmlWebpackPlugin({
   template: "./src/index.html",
@@ -15,6 +16,10 @@ module.exports = (env, argv) => {
   const { mode } = argv;
   console.log(env);
   return {
+    output: {
+      path: path.join(__dirname, "UI"),
+      filename: "app.bundle.js"
+    },
     module: {
       rules: [
         {
@@ -30,7 +35,7 @@ module.exports = (env, argv) => {
           use: [
             mode === "development"
               ? "style-loader"
-              : MiniCssExtractPlugin.loader,
+              : miniCssExtractPlugin.loader,
             {
               loader: "css-loader"
             }
